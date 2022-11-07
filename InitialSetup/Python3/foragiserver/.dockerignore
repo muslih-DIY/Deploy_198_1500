@@ -1,0 +1,12 @@
+Dockerfile
+build.txt
+*/ivrs_module/
+*/logs/
+*/*.pid
+*/*.log
+*/*.tar.gz
+*/*.out
+*/bkp/
+*/__pycache__/*
+*__pycache__/*
+*.pytest_cache
