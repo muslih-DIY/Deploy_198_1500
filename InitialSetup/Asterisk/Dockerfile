@@ -81,10 +81,10 @@ RUN apt-get update -qq && \
 # RUN ./get_sounds.sh
 
 WORKDIR /etc/asterisk/
-# USER asterisk
+
 
 #// if need to expose ports you and change the user uncomment following lines
-USER root
+
 EXPOSE 5060
 EXPOSE 5060/udp
 EXPOSE 10000-10099/udp
@@ -93,4 +93,5 @@ EXPOSE 10000-10099/udp
 ## any of the service you can use to start the container
 # CMD ["bash"]
 # CMD ["asterisk", "-cvv"]
+USER asterisk
 CMD ["bash", "/entrypoint.sh"]
